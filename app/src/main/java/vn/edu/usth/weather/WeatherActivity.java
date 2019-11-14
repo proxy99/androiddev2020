@@ -6,14 +6,16 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class WeatherActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
         Log.i("1", "This is onCreate");
+        //Create a new Fragment
+        ForecastFragment forecastFragment = new ForecastFragment();
+        // Add the fragment to the 'container' FrameLayout
+        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
     }
-
     @Override
     public void onStart() {
         super.onStart();
