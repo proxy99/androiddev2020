@@ -14,12 +14,12 @@ import android.view.ViewGroup;
 public class ForecastFragment extends Fragment {
     public ForecastFragment() {
     }
-//  Labwork 3 here
-//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//    Inflate layout
-//    View v = new View(getContext());
-//    v.setBackgroundColor(0x00FFFF);
-//    return v;}
+    /*Labwork 3 here
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    Inflate layout
+    View v = new View(getContext());
+    v.setBackgroundColor(0x00FFFF);
+    return v;}  */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState){
