@@ -10,15 +10,22 @@
     android:background="#FFFFFF"
     tools:context=".WeatherActivity">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:name="vn.edu.usth.weather.WeatherFragment"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="0dp"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:name="vn.edu.usth.weather.ForecastFragment"/>
+    <LinearLayout
+        android:id="@+id/weatherForecastLinearLayout"
+        android:layout_width="301dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/weatherForecastViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
