@@ -5,6 +5,9 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.material.tabs.TabLayout;
+import android.content.Context;
+import android.media.MediaPlayer;
+import java.io.FileInputStream;
 
 public class WeatherActivity extends AppCompatActivity {
     private ViewPager viewPager;
@@ -18,6 +21,8 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.weatherForecastViewPager);
         adapter = new Adapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        MediaPlayer mediaPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.melodyloopsbuildingforlife);
+        mediaPlayer.start();
     }
     @Override
     public void onStart() {
